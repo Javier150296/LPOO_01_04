@@ -9,20 +9,17 @@ package CAPITULO_3;
  *
  * @author JAVIER1
  */
-public class Ejercicio_01 {
+public class Ejercicio_02 {
     public static void main(String[] args) {
-        CardBoard c1 = new CardBoard();
-        CardBoard c2 = new CardBoard();
-        CardBoard c3 = c1.go(c2);
-        c1=null;
-        
+        //System.out.println(new Alien().invade(7)); Error en el argumento invade porque no está casteado a short
     }
 }
 
-class CardBoard{
-    Short story = 200;
-    CardBoard go(CardBoard cb){
-        cb = null;
-        return cb;
+class Alien{
+    String invade(short ships){
+        return "a few";
+    }
+    String invade(short ... ships){
+        return "many";
     }
 }

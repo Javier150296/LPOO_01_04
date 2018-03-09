@@ -9,20 +9,21 @@ package CAPITULO_3;
  *
  * @author JAVIER1
  */
-public class Ejercicio_01 {
+public class Ejercicio_13 {
+    int x=3;
+    
     public static void main(String[] args) {
-        CardBoard c1 = new CardBoard();
-        CardBoard c2 = new CardBoard();
-        CardBoard c3 = c1.go(c2);
-        c1=null;
-        
+        new Ejercicio_13().go1();
+    }
+    
+    void go1(){
+        int x;
+        //go2(++x); //no est;a inicializada la x con un valor
+    }
+    
+    void go2(int y){
+        int x=++y;
+        System.out.println(x);
     }
 }
 
-class CardBoard{
-    Short story = 200;
-    CardBoard go(CardBoard cb){
-        cb = null;
-        return cb;
-    }
-}
